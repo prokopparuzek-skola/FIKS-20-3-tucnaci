@@ -12,5 +12,5 @@ for p in pictures:
     for y in range(0, 480, 120):
         for x in range(0, 480, 120):
             cropImg = img.crop((x, y, x+120, y+120))
-            cropImg.save(f"model/{i:04}.pbm")
+            cropImg.save(f"data/{i:04}.png")
             i += 1
